@@ -48,3 +48,5 @@ group :development do
   gem 'spring'
 end
 
+#required by Heroku
+gem 'rails_12factor', group: :production
