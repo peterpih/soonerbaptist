@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+%html
+%head
+  %title Sooner Baptist
+  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+  = javascript_include_tag 'application', 'data-turbolinks-track' => true
+  = csrf_meta_tags
+%body#body-container
+
+  %h1.center Welcome to Sooner Baptist !
+
+  %div.center.boxed.clickable
+    = image_tag('Church_Building.jpg', height:'200', width:'400')
+    = link_to "", "site/schedule", target:'_blank', class:'div-clickable'
+    %h2 Come join us!
+
+  %div.center.boxed.clickable
+    %figure
+      = image_tag('Youth_Ministry_Logo.png', size:'200')
+      = link_to '', 'https://www.facebook.com/SBCCrosspoint/', target:'_blank', class:'div-clickable'
+      %figcaption Youth Ministry
+
+  %div.center.boxed
+    %figure
+      = image_tag('Ladies_Ministry_Flower.jpg', size:'200')
+      = link_to '', 'https://www.facebook.com/soonerbaptistladies', target:'_blank', class:'div-clickable'
+      %figcaption Ladies Church Ministry
+
+  
+  %div.center.clickable
+    %figure
+      = image_tag('Sooner_Baptist_Logo.png', height:'100', width:'200')
+      = link_to '', "http://www.google.com", target:'_blank', class:'div-clickable'
+      %figcaption 
+
+= yield
