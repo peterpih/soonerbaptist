@@ -6,7 +6,7 @@
 }
 
 .boxed{
-  outline-color:grey;
+  outline-color:red;
   outline-width:2px;
   outline-style:solid;
 }
@@ -19,6 +19,8 @@
   width:400px;
 }
 
+// "div.clickable" and ".div-clickable" (for the link_to class:'div-clickable') are used to
+// make an entire %div section clickable as one
 div.clickable{
   position:relative;
 }
@@ -29,9 +31,9 @@ div.clickable{
   height: 100%;
   top: 0;
   left: 0;
-  text-decoration: none; /* No underlines on the link */
-  z-index: 10; /* Places the link above everything else in the div */
-  background-color: #FFF; /* Fix to make div clickable in IE */
-  opacity: 0; /* Fix to make div clickable in IE */
-  filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+  text-decoration: none;     // No underlines on the link
+  z-index: 10;               // Places the link above everything else in the div
+  background-color: #FFF;    // Fix to make div clickable in IE
+  opacity: 0;                // Fix to make div clickable in IE
+  filter: alpha(opacity=1);  // Fix to make div clickable in IE
 }

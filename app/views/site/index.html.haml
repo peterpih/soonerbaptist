@@ -1,18 +1,22 @@
-<!DOCTYPE html>
+!!!
 %html
 %head
   %title Sooner Baptist
   = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
   = javascript_include_tag 'application', 'data-turbolinks-track' => true
   = csrf_meta_tags
+
 %body#body-container
 
   %h1.center Welcome to Sooner Baptist !
 
   %div.center.clickable
     = image_tag('Church_Building.jpg', height:'200', width:'400')
-    = link_to "", "site/schedule", target:'_blank', class:'div-clickable'
+    = link_to '', 'site/schedule', target:'_blank', class:'div-clickable'
     %h2 Come join us!
+
+  %div.center.boxed
+    %h3 A body of believers who exalt Jesus through<br>teaching, living, and sharing God's Word.
 
   %div.center.clickable
     %figure
@@ -30,7 +34,17 @@
   %div.center.clickable
     %figure
       = image_tag('Sooner_Baptist_Logo.png', height:'100', width:'200')
-      = link_to '', "http://www.google.com", target:'_blank', class:'div-clickable'
+      = link_to '', 'site/contact_us', target:'_blank', class:'div-clickable'
+      %figcaption Contact Us
+
+  %div.center.clickable
+    %figure
+      = image_tag('Other_Links.png', height:'30', width:'100')
+      = link_to '', 'site/other_links', target:'_blank', class:'div-clickable'
       %figcaption 
 
 = yield
+
+%br
+%br
+%br
