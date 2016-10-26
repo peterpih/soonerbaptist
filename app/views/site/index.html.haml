@@ -1,4 +1,4 @@
-!!!
+-#!!!
 %html
 -# %head
 -#   %title Sooner Baptist
@@ -6,42 +6,74 @@
 -#   = javascript_include_tag 'application', 'data-turbolinks-track' => true
 -#   = csrf_meta_tags
 
-%body#body-container
+.container-fluid{style: "border-style:solid;border-color:green"}
+  .row
+    .col-xs-3{style: "border-style:solid;border-color:red"}
+      Lorem ipsum dolor sit amet, fugit patrioque pro id, quo an ridens prompta ullamcorper, quo mutat quaeque cu. Malis primis verterem an est, ius primis regione patrioque ei. Fugit eirmod interesset ut mel, mea ex nulla tation pericula. Te cum decore detraxit honestatis, cu everti nostrud consequat eam.
+    .col-xs-9{style: "border-style:solid;border-color:blue"}
+      push down a line
+      .row
+        .col-xs-6{style: "border-style:solid;border-color:blue"}
+          does this work?
+          .row
+            .col-md-6{style: "border-style:solid;border-color:blue"}
+              some other text
+            .col-md-6{style: "border-style:solid;border-color:blue"}
+              some other text again
+        .col-xs-6{style: "border-style:solid;border-color:blue"}
+          hello
+          .row
+            .col-md-6{style: "border-style:solid;border-color:pink"}
+              Lorem ipsum dolor sit amet, fugit patrioque pro id, quo an ridens prompta 
+            .col-md-6{style: "border-style:solid;border-color:pink"}
+              Habeo munere inciderint quo et, et sint vide sed. Iudico soleat definiebas quo id, ne mei mazim graeco similique. Quo ut nominavi inimicus, no qui posse quidam molestie, pericula maiestatis vel at. Eum no feugait iracundia. Zril primis scripta ei pri, omittam vivendum nam te.
+            .col-md-6{style: "border-style:solid;border-color:pink"}
+              Lorem ipsum dolor sit amet, fugit patrioque pro id, quo an ridens prompta 
+          back again
+      puch back a line
 
-  %h1.center Welcome to Sooner Baptist !
 
-  %div.center.clickable
-    = image_tag('Church_Building.jpg', height:'200', width:'400')
-    = link_to '', 'site/schedule', target:'_blank', class:'div-clickable'
-    %h2 Come join us!
+-# %body#body-container
 
-  %div.center.boxed
-    %h3 A body of believers who exalt Jesus through<br>teaching, living, and sharing God's Word.
+-#   %h1.center Welcome to Sooner Baptist !
 
-  %div.center.clickable
-    %figure
-      = image_tag('Youth_Ministry_Logo.png', size:'200')
-      = link_to '', 'https://www.facebook.com/SBCCrosspoint/', target:'_blank', class:'div-clickable'
-      %figcaption Youth Ministry
+-#   %div.center.clickable
+-#     = image_tag('Church_Building.jpg', height:'200', width:'400')
+-#     = link_to '', 'site/schedule', target:'_blank', class:'div-clickable'
+-#     %h2 Come join us!
+  
+-#   = link_to "Come join us!", 'site/schedule', class: 'btn btn-success btn-lg btn-block'
+-#   = link_to "Schedule", 'site/schedule', class: 'btn btn-default btn-block'
+-#   = link_to "Schedule", 'site/schedule', class: 'btn btn-default btn-lg'
+-#   = link_to "Schedule", 'site/schedule', class: 'btn btn-default btn-sm'
 
-  %div.center.clickable
-    %figure
-      = image_tag('Ladies_Ministry_Flower.jpg', size:'200')
-      = link_to '', 'https://www.facebook.com/soonerbaptistladies', target:'_blank', class:'div-clickable'
-      %figcaption Ladies Church Ministry
+-#   %div.center.boxed
+-#     %h3 A body of believers who exalt Jesus through<br>teaching, living, and sharing God's Word.
+
+-#   %div.center.clickable
+-#     %figure
+-#       = image_tag('Youth_Ministry_Logo.png', size:'200')
+-#       = link_to '', 'https://www.facebook.com/SBCCrosspoint/', target:'_blank', class:'div-clickable'
+-#       %figcaption Youth Ministry
+
+-#   %div.center.clickable
+-#     %figure
+-#       = image_tag('Ladies_Ministry_Flower.jpg', size:'200')
+-#       = link_to '', 'https://www.facebook.com/soonerbaptistladies', target:'_blank', class:'div-clickable'
+-#       %figcaption Ladies Church Ministry
 
   
-  %div.center.clickable
-    %figure
-      = image_tag('Sooner_Baptist_Logo.png', height:'100', width:'200')
-      = link_to '', 'site/contact_us', target:'_blank', class:'div-clickable'
-      %figcaption Contact Us
+-#   %div.center.clickable
+-#     %figure
+-#       = image_tag('Sooner_Baptist_Logo.png', height:'100', width:'200')
+-#       = link_to '', 'site/contact_us', target:'_blank', class:'div-clickable'
+-#       %figcaption Contact Us
 
-  %div.center.clickable
-    %figure
-      = image_tag('Other_Links.png', height:'30', width:'100')
-      = link_to '', 'site/other_links', target:'_blank', class:'div-clickable'
-      %figcaption 
+-#   %div.center.clickable
+-#     %figure
+-#       = image_tag('Other_Links.png', height:'30', width:'100')
+-#       = link_to '', 'site/other_links', target:'_blank', class:'div-clickable'
+-#       %figcaption 
 
-= yield
+-# = yield
 
