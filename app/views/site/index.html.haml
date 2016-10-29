@@ -6,31 +6,33 @@
 -#   = javascript_include_tag 'application', 'data-turbolinks-track' => true
 -#   = csrf_meta_tags
 
-.container-fluid{style: "border-style:solid;border-color:green"}
-  .row
-    .col-xs-3{style: "border-style:solid;border-color:red"}
-      Lorem ipsum dolor sit amet, fugit patrioque pro id, quo an ridens prompta ullamcorper, quo mutat quaeque cu. Malis primis verterem an est, ius primis regione patrioque ei. Fugit eirmod interesset ut mel, mea ex nulla tation pericula. Te cum decore detraxit honestatis, cu everti nostrud consequat eam.
-    .col-xs-9{style: "border-style:solid;border-color:blue"}
-      push down a line
-      .row
-        .col-xs-6{style: "border-style:solid;border-color:blue"}
-          does this work?
-          .row
-            .col-md-6{style: "border-style:solid;border-color:blue"}
-              some other text
-            .col-md-6{style: "border-style:solid;border-color:blue"}
-              some other text again
-        .col-xs-6{style: "border-style:solid;border-color:blue"}
-          hello
-          .row
-            .col-md-6{style: "border-style:solid;border-color:pink"}
-              Lorem ipsum dolor sit amet, fugit patrioque pro id, quo an ridens prompta 
-            .col-md-6{style: "border-style:solid;border-color:pink"}
-              Habeo munere inciderint quo et, et sint vide sed. Iudico soleat definiebas quo id, ne mei mazim graeco similique. Quo ut nominavi inimicus, no qui posse quidam molestie, pericula maiestatis vel at. Eum no feugait iracundia. Zril primis scripta ei pri, omittam vivendum nam te.
-            .col-md-6{style: "border-style:solid;border-color:pink"}
-              Lorem ipsum dolor sit amet, fugit patrioque pro id, quo an ridens prompta 
-          back again
-      puch back a line
+
+.row
+  .col-xs-3{style: "border-style:solid;border-color:red"}
+    <b>.col-xs-3</b> 
+    Lorem ipsum dolor sit amet, fugit patrioque pro id, quo an ridens prompta ullamcorper, quo mutat quaeque cu. Malis primis verterem an est, ius primis regione patrioque ei. Fugit eirmod interesset ut mel, mea ex nulla tation pericula. Te cum decore detraxit honestatis, cu everti nostrud consequat eam.
+  .col-xs-9{style: "border-style:solid;border-color:green"}
+    <b>.col-xs-9</b>
+    push down a line
+    .row
+      .col-xs-6{style: "border-style:solid;border-color:blue"}
+        <b>.col-xs-6</b> does this work?
+        .row
+          .col-md-6{style: "border-style:solid;border-color:blue"}
+            <b>.col-md-6</b> some other text
+          .col-md-6{style: "border-style:solid;border-color:blue"}
+            <b>.col-md-6</b> some other text again
+      .col-xs-6.bluefill
+        <b>.col-xs-6</b> hello
+        .row
+          .col-md-4.pinkfill.blackborder
+            Lorem ipsum dolor sit amet, fugit patrioque pro id, quo an ridens prompta 
+          .col-md-4.pinkfill.blackborder
+            Habeo munere inciderint quo et, et sint vide sed. Iudico soleat definiebas quo id, ne mei mazim graeco similique. Quo ut nominavi inimicus, no qui posse quidam molestie, pericula maiestatis vel at. Eum no feugait iracundia. Zril primis scripta ei pri, omittam vivendum nam te.
+          .col-md-4.pinkfill.blackborder
+            Lorem ipsum dolor sit amet, fugit patrioque pro id, quo an ridens prompta 
+        back again
+    puch back a line
 
 
 -# %body#body-container

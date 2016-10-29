@@ -1,16 +1,15 @@
-%nav.navbar.navbar-default
-  .container-fluid
-    .navbar-header
-      .button.navbar-toggle.collapsed{'type'=>'button', 'data-toggle'=>'collapse', 'data-target'=>'#bs-example-navbar-collapse-1', 'aria-expanded'=>'false'}
-        %span.sr-only="Toggle navigation"
+%nav.navbar.navbar-default.navbar-fixed-top
+  .container-fluid.redborder
+    .navbar.navbar-header.blueborder
+      %button.navbar-toggle{'type'=>'button', 'data-toggle'=>'collapse', 'data-target'=>'#collapse-1'}
+        %span.icon-bar{'color' => 'blue'}
         %span.icon-bar
         %span.icon-bar
-        %span.icon-bar
-      .navbar-brand="SBC Logo Here"
-    .collapse.navbar-collapse#bs-example-navbar-collapse-1
-      .nav.navbar-nav
+      =link_to 'SBC Logo', "https://www.google.com", class: "navbar-brand"
+    .collapse.navbar-collapse#collapse-1
+      %ul.nav.navbar-nav.orangeborder
         %li
-          =link_to 'Worship Schedule', "#"
+          =link_to 'Worship Schedule', "#", class: 'active'
         %li
           =link_to 'Events Calendar', "https://google.com"
         %li
@@ -26,6 +25,14 @@
             %li.divider {style="role:separator"}
             %li= link_to 'One more separated link', "#"
         %li= link_to 'Contact Us', "#"
+
+%nav.navbar.navbar-default.orangeborder
+  .container-fluid
+    .navbar.navbar-header.blueborder
+      .button.navbar-toggle{'type'=>'button', 'data-toggle'=>'collapse', 'data-target'=>'#collapse-1'}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
 
   -#     %ul.nav.navbar-nav.navbar-right
   -#       %li

@@ -32,6 +32,9 @@ gem 'bcrypt', '~> 3.1.7'
 # gem 'unicorn'
 gem 'puma'
 gem 'haml'
+
+#gem 'bootstrap', '~> 4.0.0.alpha5'
+gem 'sprockets-rails'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 

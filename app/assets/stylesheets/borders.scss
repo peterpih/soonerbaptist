@@ -1,3 +1,7 @@
+.nopadmargin{
+  margin: 0;
+  padding: 0;
+}
 .blackborder{
   border-style: solid;
   border-color: black;
@@ -30,34 +34,6 @@
   border-style: solid;
   border-color: pink;
 }
-.blackborder{
-  border-style: solid;
-  border-color: black;
-}
-.whiteborder{
-  border-style: solid;
-  border-color: white;
-}
-.redborder{
-  border-style: solid;
-  border-color: red;
-}
-.greenborder{
-  border-style: solid;
-  border-color: green;
-}
-.blueborder{
-  border-style: solid;
-  border-color: blue;
-}
-.yellowborder{
-  border-style: solid;
-  border-color: yellow;
-}
-.orangeborder{
-  border-style: solid;
-  border-color: orange;
-}
 .blackfill{
   background-color: black;
 }
@@ -77,9 +53,6 @@
   background-color: yellow;
 }
 .orangefill{
-  background-color: pink;
-}
-.pinkfill{
   background-color: orange;
 }
 .pinkfill{
