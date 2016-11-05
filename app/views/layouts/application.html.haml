@@ -3,7 +3,9 @@
 -# SOONER BAPTIST
 
 %html
+
   .container
+  
     = render 'layouts/header'
     -# = render 'layouts/navbar'
     %body.background_image.pinkborder
@@ -29,7 +31,6 @@
             -#   is this anything
             %div{style: "width:auto;"}
               = yield
-            }
-
+ 
       = render 'layouts/beforebodyend'
     = render 'layouts/footer'

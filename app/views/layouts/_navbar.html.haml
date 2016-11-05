@@ -1,17 +1,21 @@
+
 -# SOONER BAPTIST
 
 %nav.navbar.navbar-default.navbar-fixed-top
   .container-fluid.redborder
     .navbar-header
+
       %button.navbar-toggle{'type'=>'button', 'data-toggle'=>'collapse', 'data-target'=>'#collapse-1'}
         %span.icon-bar{'color' => 'blue'}
         %span.icon-bar
         %span.icon-bar
+
       =link_to image_tag('Sooner_Baptist_Logo.png', size:'55'), "/",  style: "border:2p solid pink"
     .collapse.navbar-collapse#collapse-1
       %ul.nav.navbar-nav.orangeborder
         %li= link_to 'Worship Schedule', "/site/schedule", class: 'active'
         %li= link_to 'Events Calendar', "https://google.com"
+
         %li
           = link_to "#", {'class'=>"dropdown-toggle", 'data-toggle'=>"dropdown", 'role'=>"button", 'aria-haspopup'=>"true", 'aria-expanded'=>"false"} do
             Programs
@@ -24,5 +28,7 @@
             %li= link_to 'Separated link', "#"
             %li.divider {style="role:separator"}
             %li= link_to 'One more separated link', "#"
+
         %li= link_to 'Contact Us', "/site/contact_us"
 .navbar-fixed-top-spacer
+
