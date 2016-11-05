@@ -16,11 +16,10 @@
 }
 
 .background_image{
-  background: transparent image-url("Church_Building.jpg") no-repeat center center fixed;
+  background: image-url("Church_Building.jpg") no-repeat center center fixed;
   background-size: auto;  // cover;
   width: 100%;
   height: auto;
-
 }
 
 .blackborder{
@@ -83,5 +82,11 @@
 .greyfill{
   background-color: rgb(200,200,200);
 }
+<<<<<<< Updated upstream
 =======
 >>>>>>> master
+=======
+.lighttextbackground{
+  background-color: rgba(255, 255, 255, .5);
+}
+>>>>>>> Stashed changes

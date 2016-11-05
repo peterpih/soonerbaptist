@@ -7,7 +7,7 @@
   .container
   
     = render 'layouts/header'
-    -# = render 'layouts/navbar'
+    = render 'layouts/navbar'
     %body.background_image.pinkborder
       
       -# .background_image
@@ -29,8 +29,8 @@
             -#     %li="hello"
             -#     %li="goodbye"
             -#   is this anything
-            %div{style: "width:auto;"}
+            %div.greyfill{style: "width:auto;display:block;background:rgba(54, 25, 25, .05);"}
               = yield
- 
+
       = render 'layouts/beforebodyend'
     = render 'layouts/footer'
