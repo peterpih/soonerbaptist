@@ -1,25 +1,35 @@
 !!!
+
+-# SOONER BAPTIST
+
 %html
-  .container.blackborder
+  .container
     = render 'layouts/header'
+    -# = render 'layouts/navbar'
+    %body.background_image.pinkborder
+      
+      -# .background_image
 
-    %body.orangeborder
-      = render 'layouts/navbar'
       .container-fluid
-        .row{style: "border-style:solid;border-color:red"}
-          .col-xs-4{id: "sidebar", class: "col-xs-4", style: "border-style:solid"}
-            %h3='Tealeaf Academy'
+        .row.greenborder
+          -# .col-sm-3.sidebar-collapse.pinkfill
 
-        %div.col-xs-8{style: "border-style:solid;border-color:blue"}
+          -#   = render 'layouts/navsidebar'
 
-        %div.yellowborder
-          here is some text in the yellow box
-        %table.table.table-bordered{style: "border-style:solid;color:green"}
-          %ul
-            %li="hello"
-            %li="goodbye"
-          is this anything
+          .col-sm-12.blueborder
+          
+            -# This is the main body area
 
-    = yield
+            -# %div.yellowfill
+            -#   here is some text in the yellow box
+            -# %table.table.table-bordered{style: "border-style:solid;color:green"}
+            -#   %ul
+            -#     %li="hello"
+            -#     %li="goodbye"
+            -#   is this anything
+            %div{style: "width:auto;"}
+              = yield
+            }
 
+      = render 'layouts/beforebodyend'
     = render 'layouts/footer'
