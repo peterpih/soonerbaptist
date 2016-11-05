@@ -1,8 +1,27 @@
 !!!
 %html
-= render 'layouts/header'
-%body#body-container
+  .container-fluid.blackborder
+    = render 'layouts/header'
 
-= yield
+  %body
 
-= render 'layouts/footer'
+
+    = render 'layouts/navbar'
+    .container-fluid
+      .row{style: "border-style:solid;border-color:red"}
+        .col-xs-4{id: "sidebar", class: "col-xs-4", style: "border-style:solid"}
+          %h3='Tealeaf Academy'
+
+        %div.col-xs-8{style: "border-style:solid;border-color:blue"}
+
+          %div.yellowborder
+            here is some text in the yellow box
+          %table.table.table-bordered{style: "border-style:solid;color:green"}
+            %ul
+              %li="hello"
+              %li="goodbye"
+            is this anything
+
+    = yield
+
+    = render 'layouts/footer'
