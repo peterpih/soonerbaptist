@@ -1,20 +1,24 @@
+
+-# SOONER BAPTIST
+
 %nav.navbar.navbar-default.navbar-fixed-top
   .container-fluid.redborder
-    .navbar.navbar-header.blueborder
+    .navbar-header
+
       %button.navbar-toggle{'type'=>'button', 'data-toggle'=>'collapse', 'data-target'=>'#collapse-1'}
         %span.icon-bar{'color' => 'blue'}
         %span.icon-bar
         %span.icon-bar
-      =link_to 'SBC Logo', "https://www.google.com", class: "navbar-brand"
+
+      =link_to image_tag('Sooner_Baptist_Logo.png', size:'55'), "/",  style: "border:2p solid pink"
     .collapse.navbar-collapse#collapse-1
       %ul.nav.navbar-nav.orangeborder
-        %li
-          =link_to 'Worship Schedule', "#", class: 'active'
-        %li
-          =link_to 'Events Calendar', "https://google.com"
+        %li= link_to 'Worship Schedule', "/site/schedule", class: 'active'
+        %li= link_to 'Events Calendar', "https://google.com"
+
         %li
           = link_to "#", {'class'=>"dropdown-toggle", 'data-toggle'=>"dropdown", 'role'=>"button", 'aria-haspopup'=>"true", 'aria-expanded'=>"false"} do
-            Outreach Programs
+            Programs
             %span.caret
           %ul.dropdown-menu
             %li= link_to 'Youth Ministry', "#"
@@ -24,38 +28,12 @@
             %li= link_to 'Separated link', "#"
             %li.divider {style="role:separator"}
             %li= link_to 'One more separated link', "#"
-        %li= link_to 'Contact Us', "#"
 
-%nav.navbar.navbar-default.orangeborder
-  .container-fluid
-    .navbar.navbar-header.blueborder
-      .button.navbar-toggle{'type'=>'button', 'data-toggle'=>'collapse', 'data-target'=>'#collapse-1'}
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
+        %li= link_to 'Contact Us', "/site/contact_us"
 
-  -#     %ul.nav.navbar-nav.navbar-right
-  -#       %li
-  -#         = link_to 'Link', "#"
-  -#       %li.dropdown
-  -#         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-  -#         %ul.dropdown-menu
-  -#           %li= link_to 'Action', "#"
-  -#           %li= link_to 'Another action', "#"
-  -#           %li= link_to 'Something else here', "#"
-  -#           %li.divider {style="role:separator"}
-  -#           %li= link_to 'Separated link', "#"
-  -# .collapse.navbar-collapse#bs-example-navbar-collapse-1.col-sm-2
-  -#   %ul.nav.nav-pills.nav-stacked
-  -#     %li= link_to 'Link', "#"
-  -#     %li.dropdown
-  -#       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-  -#       %ul.dropdown-menu
-  -#         %li= link_to 'Action', "#"
-  -#         %li= link_to 'Another action', "#"
-  -#         %li= link_to 'Something else here', "#"
-  -#         %li.divider {style="role:separator"}
-  -#         %li= link_to 'Separated link', "#"
-  -#     %li= link_to "Another link", "#"
-  -# .container.col-sm-10
+      %ul.nav.navbar-nav.navbar-right
+        %li= link_to 'Sign Up', "#"
+        %li= link_to 'Login', "#"
+
+.navbar-fixed-top-spacer
 
